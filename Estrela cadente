@@ -1,0 +1,24 @@
+var xPos = 350;
+var yPos = 20;
+var xPos1 = 20;
+var yPos1 = 1;
+var xPos2 = 80 ;
+var yPos2 = 350;
+
+draw = function() {
+    image(getImage("space/background"),0,0);
+    image(getImage("cute/Star"), xPos1,yPos1);
+        fill(255, 242, 0);
+    ellipse(xPos, yPos, 10, 10);
+    
+    fill(255, 242, 0);
+    ellipse(xPos2, yPos2, 10, 10);
+    
+    yPos +=1;
+    xPos -= 1;
+    yPos1 += 1;
+    xPos1 +=1;
+    yPos2 -=1;
+    xPos2 +=1;
+    
+};
