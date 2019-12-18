@@ -1,1 +1,1 @@
-# Anima-es-em-JavaScript
+# Animações em JavaScript
