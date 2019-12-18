@@ -1,0 +1,52 @@
+background(89, 216, 255);
+var drawFish = function(centerX,centerY,bodyLength,bodyHeight,bodyColor) {
+
+noStroke();
+fill(bodyColor);
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+// eye
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+};
+
+drawFish(200,100,30,20, color(162, 0, 255));
+
+drawFish(30,300,30,19, color(156, 165, 166));
+drawFish(50,260,60,29, color(242, 167, 192));
+drawFish(130,200,80,69, color(152, 47, 181));
+drawFish(30,30,30,19, color(127, 176, 109));
+drawFish(300,380,30,19, color(186, 227, 50));
+drawFish(330,30,30,19, color(68, 179, 81));
+drawFish(330,150,30,19, color(201, 165, 65));
+drawFish(40,130,30,19, color(209, 104, 69));
+drawFish(210,320,30,19, color(64, 130, 222));
+drawFish(280,250,70,49, color(201, 36, 160));
+
+//tamanhos diferentes
+var drawFish = function(centerX,centerY,bodyLength,bodyHeight,bodyColor) {
+
+noStroke();
+fill(bodyColor);
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/6;
+var tailHeight = bodyHeight/2;
+fill(74, 68, 68);
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+// eye
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/8, centerY, bodyHeight/5, bodyHeight/7);
+};
+drawFish(115,90,80,99, color(200, 209, 174));
+drawFish(115,360,80,99, color(149, 153, 136));
+drawFish(230,190,50,39, color(237, 29, 84));
