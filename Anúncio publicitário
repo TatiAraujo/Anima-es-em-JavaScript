@@ -1,0 +1,39 @@
+draw = function() {
+background(179, 227, 189);
+fill(242, 0, 255);
+textSize(30);
+text("Perfumes hipoalérgicos!", 10, 30);
+textSize(20);
+fill(5, 5, 5);
+text("Chegou no mercado de perfumaria um ", 10, 87);
+text("produto revolucionário!!!", 10, 110);
+textSize(30);
+fill(194, 21, 174);
+text("O novo perfume antialérgico", 20,250);
+textSize(20);
+fill(255, 140, 0);
+var desc = (" O perfume Essentials");
+var desc1 = (" é uma frangância");
+var anun =  desc + desc1;
+text(anun, 1,300);
+text(" que não irrita a pele, não dá dor de cabeça", 1, 330);
+text(" e não ataca as alergias",1, 360);
+fill(20, 18, 18);
+textSize(13);
+text("Imagem do produto",150,190);
+//imagem
+var X1 = 200;
+var Y1 = 100;
+fill(128, 24, 123);
+rect(X1+80,Y1+50,20,70);
+fill(218, 157, 232);
+rect(X1+85,Y1+35,10,20);
+fill(33, 29, 29);
+ellipse(X1+90,Y1+45,2,8);
+
+X1 +=1;
+
+
+
+};
+ 
